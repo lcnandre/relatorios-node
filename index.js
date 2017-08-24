@@ -25,6 +25,6 @@ app.use('/api', api.rotas);
   });
 }).catch(err => console.error(err));*/
 
-app.listen(8080, () => {
-  console.log('Servidor HTTP executando na porta 8080');
+app.listen(process.env.PORT || 80, () => {
+  console.log(`Servidor HTTP executando na porta ${process.env.PORT || 3000}`);
 });
