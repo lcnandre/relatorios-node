@@ -86,7 +86,7 @@ module.exports.novoRelatorio = (relatorio) => {
     let caminhoRelatorio = path.join(CAMINHO, relatorio);
     let caminhoHb = path.join(CAMINHO, relatorio, 'index.handlebars');
     let caminhoScript = path.join(CAMINHO, relatorio, 'script.js');
-    let caminhoCss = path.join(CAMINHO, relatorio, 'estilo.js');
+    let caminhoCss = path.join(CAMINHO, relatorio, 'estilo.css');
     let caminhoDados = path.join(CAMINHO, relatorio, 'dados.json');
   
     if (fs.existsSync(caminhoRelatorio)){
