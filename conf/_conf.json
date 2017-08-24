@@ -1,0 +1,6 @@
+{
+  "servidor": "localhost\\sqlexpress",
+  "usuario": "sa",
+  "senha": "**",
+  "base": "relatorios"
+}

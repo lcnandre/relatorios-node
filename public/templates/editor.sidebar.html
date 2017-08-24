@@ -1,0 +1,23 @@
+<ul class="nav nav-pills nav-stacked nav-sidebar">
+  <li>
+    <a data-toggle="collapse" href="#relatorios" aria-expanded="false" aria-controls="relatorios">Relatórios</a>
+    <div class="collapse" id="relatorios">
+      <div class="well submenu">
+        <div class="list-group">
+          <a class="list-group-item" href="#" ng-repeat="rel in relatorios" ng-click="selecionarRelatorio($index,$event)">{{ rel.nome }}</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <li ng-if="relatorioSelecionado">
+    <a data-toggle="collapse" href="#arquivos" aria-expanded="false" aria-controls="arquivos">Arquivos</a>
+    <div class="collapse" id="arquivos">
+      <div class="well submenu">
+        <div class="list-group">
+          <a class="list-group-item" href="#" ng-repeat="arq in relatorioSelecionado.arquivos" ng-click="selecionarArquivo($index,$event)"> {{ arq }}</a>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
